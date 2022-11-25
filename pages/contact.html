@@ -30,8 +30,38 @@
             <h1>Contact Us</h1>
             <form method="post" action="#">
                 <div class="column__two-input">
-                    
+                    <div class="label__wrapper">
+                        <label for="Name">Name</label>
+                        <input id="Name" type="text" placeholder="Ivan Ivanov">
+                    </div>
+                    <div class="label__wrapper">
+                        <label for="">Phone</label>
+                        <input type="tel">
+                    </div>
                 </div>
+                <div class="label__wrapper">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+                <fieldset>
+                    <legend>Payment method</legend>
+                    <ul>
+                        <li>
+                            <label for="cash">Cash</label>
+                            <input id="cash" type="radio" name="payment">
+                        </li>
+                        <li>
+                            <label for="Credit">Credit card</label>
+                            <input id="Credit" type="radio" name="payment">
+                        </li>
+                        <li>
+                            <label for="Receipt">Receipt</label>
+                            <input id="Receipt" type="radio" name="payment">
+                        </li>
+                    </ul>
+                </fieldset>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">submit</button>
             </form>
         </section>
       </main>
