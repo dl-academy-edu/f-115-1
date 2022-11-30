@@ -3,12 +3,17 @@
     padding: 0;
 }
 
-a {
-    list-style: none;
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
 }
 
-li {
-    list-style-type: none;
+a {
+    list-style: none;
+    text-decoration: none;
 }
 
 img {
@@ -21,5 +26,36 @@ img {
     margin: 0 auto;
 }
 
+.undotted {
+    list-style-type: none;
+}
+
 /* стилизация header */
 
+.header__list-link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.header__phone {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #95459A;
+}
+
+.link__info {
+    padding: 11px 40px;
+    max-width: max-content;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background: #008752;
+}
+
+.btn {
+    border: none;
+    background: #95459A;
+}
