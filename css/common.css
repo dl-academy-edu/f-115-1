@@ -36,6 +36,7 @@ img {
 .header {
     display: flex;
     margin-top: 33px;
+    margin-bottom: 33px;
     align-items: center;
 }
 
@@ -47,10 +48,19 @@ img {
     display: flex;
 }
 
+.left {
+    margin-right: auto;
+}
+
+.header__logo {
+    margin-right: 25px;
+}
+
 .header__list-link {
     font-size: 16px;
     line-height: 20px;
     color: #333333;
+    margin-right: 15px;
 }
 
 .header__phone {
