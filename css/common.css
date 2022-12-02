@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,6 +32,20 @@ img {
 }
 
 /* стилизация header */
+
+.header {
+    display: flex;
+    margin-top: 33px;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+}
 
 .header__list-link {
     font-size: 16px;
