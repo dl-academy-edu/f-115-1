@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Overpass&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -28,7 +26,7 @@
       </nav>
         <ul class="header__list header__contact">
           <li class="header__list-item header__contact-item undotted"><a class="header__list-link header__phone" href="tel:7194319698">719-431-9698</a></li>
-          <li class="header__list-item header__contact-item undotted"><a class="header__list-link link__info" href="#">Contact Us</a></li>
+          <li class="header__list-item header__contact-item undotted"><a class="header__list-link link__info" href="./pages/contact.html">Contact Us</a></li>
         </ul>
     </header>
     <main>
@@ -81,6 +79,10 @@
           </li>
         </ul>
       </section>
+      <div class="container about-us">
+        <h2 class="about__title">Title</h2>
+        <p class="about__text">Lorem ipsum dolor sit amet.</p>
+      </div>
       <section class="container">
         <div>
           <h2>Why Haley’s Chem-Dry?</h2>
@@ -130,6 +132,27 @@
             </li>
         </ul>
     </footer>
+    <div class="popup">
+      <form method="post" action="#" class="contact__form">
+        <div class="column__two-input">
+            <div class="label__wrapper">
+                <label class="contact__label" for="Name">Name</label>
+                <input class="contact__input" id="Name" type="text" placeholder="Ivan Ivanov">
+            </div>
+            <div class="label__wrapper">
+                <label class="contact__label" for="">Phone</label>
+                <input class="contact__input" type="tel">
+            </div>
+        </div>
+        <div class="label__wrapper">
+            <label class="contact__label" for="">Email</label>
+            <input class="contact__input-email" type="email">
+        </div>
+        <label class="contact__label" for="textarea">Message</label>
+        <textarea class="contact__area" name="" id="textarea" cols="30" rows="10" ></textarea>
+        <button class="link__info" type="submit">submit</button>
+    </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

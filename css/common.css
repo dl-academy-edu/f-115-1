@@ -1,86 +1,219 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #2C3036;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #2c3036;
 }
 
 a {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    max-width: 1180px;
-    margin: 0 auto;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .undotted {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+label {
+  cursor: pointer;
 }
 
 /* стилизация header */
 
 .header {
-    display: flex;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    align-items: center;
+  display: flex;
+  margin-top: 23px;
+  margin-bottom: 33px;
+  align-items: center;
 }
 
 .header__nav {
-    display: flex;
+  display: flex;
 }
 
 .header__list {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .header__logo {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .header__list-link {
-    font-size: 16px;
-    line-height: 20px;
-    color: #333333;
-    margin-right: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  margin-right: 15px;
 }
 
 .header__phone {
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 20px;
-    color: #95459A;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #95459a;
 }
 
 .link__info {
-    padding: 11px 40px;
-    max-width: max-content;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background: #008752;
+  padding: 11px 40px;
+  max-width: max-content;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  line-height: 18px;
+  color: #ffffff;
+  background: #008752;
 }
 
 .btn {
-    border: none;
-    background: #95459A;
+  border: none;
+  background: #95459a;
+}
+
+/* popup */
+
+.contact__form {
+  margin: auto;
+  max-width: 780px;
+  background: #eeeeee;
+  padding: 50px 100px;
+}
+
+.column__two-input {
+  display: flex;
+  max-width: 580px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.label__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__label {
+  margin-bottom: 6px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6b6a6a;
+}
+
+.contact__input {
+  width: 280px;
+  height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact__input::placeholder {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: #797979;
+}
+
+.contact__input-email {
+  width: 100%;
+  height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact__payment {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.contact__payment-title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6b6a6a;
+}
+
+.contact__payment__list {
+  display: flex;
+  gap: 33px;
+}
+
+.contact__payment-method {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contact__payment-input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+
+.contact__payment-label {
+  margin-left: 25px;
+}
+
+.contact__payment-label::before {
+  content: "";
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+  margin-left: -25px;
+  position: absolute;
+  background-image: url("../img/icon/squr.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__payment-input:checked + .contact__payment-label::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon/ch.png");
+}
+
+/* пасхалка */
+
+.background {
+  background-color: #00559d;
+}
+
+.content {
+  color: #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* пасхалка закончилась */
+
+.contact__area {
+  width: 100%;
+  height: 100px;
+  resize: none;
 }
