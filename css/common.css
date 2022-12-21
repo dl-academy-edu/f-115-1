@@ -75,6 +75,7 @@ label {
 }
 
 .link__info {
+  text-transform: uppercase;
   padding: 11px 40px;
   max-width: max-content;
   font-weight: 700;
@@ -92,6 +93,41 @@ label {
 
 /* popup */
 
+.popup {
+  display: none;
+  top: 25%;
+  left: 30%;
+  position: absolute;
+  z-index: 1;
+}
+
+.open {
+  display: flex;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(125, 151, 218, 0.8);
+}
+
+.popup__wr {
+  display: flex;
+  z-index: 3;
+}
+
+.close {
+  background: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url('../img/close.png');
+}
 .contact__form {
   margin: auto;
   max-width: 780px;
